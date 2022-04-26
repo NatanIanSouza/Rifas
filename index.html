@@ -1,15 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Rifas</title>
+    <title>Login - Sistema de Rifas</title>
 </head>
 
 <body>
+    <div class="container-fluid">
+        <div class="row">
 
+            <div class="col-12 card flex-row mx-auto">
+                <div class="card-body">
+                    <div class="row mb-2">
+
+                        <div class="col-12 col-sm-12 col-md-12 mt-4">
+                            <h4 class="title text-center">
+                                Login
+                            </h4>
+                        </div>
+                    </div>
+                    <form class="form-box px-4" id="form-login">
+                        <div class="form-input">
+                            <input type="text" name="LOGIN" id="LOGIN" placeholder="Insira seu login..." tabindex="10" class="pula" required>
+                        </div>
+                        <div class="form-input">
+                            <span><i class="fa fa-key"></i></span>
+                            <input type="password" name="SENHA" id="SENHA" placeholder="Insira sua senha..." class="pula" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <button type="submit" class="btn btn-block text-uppercase btn-login">
+                                Login
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="img-right d-none d-md-flex">
+
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
