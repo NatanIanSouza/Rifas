@@ -27,7 +27,7 @@ $(document).ready(function() {
                     $('#modal-tipo').modal('show')
                 } else {
                     Swal.fire({
-                        title: 'Rifas',
+                        title: 'e-Rifa',
                         text: dado.mensagem,
                         type: dado.tipo,
                         confirmButtonText: 'OK'

@@ -42,6 +42,7 @@
 .card-body {
     padding: 2rem;
     background-color: #FFFFFF;
+    border-radius: 0.5rem !important;
 }
 
 .container-fluid {
@@ -75,7 +76,7 @@
     position: absolute;
     top: 10px;
     padding-left: 15px;
-    color: #C7BEA1, #1d75a5;
+    color: #646FD4, #1d75a5;
     transition: color 0.5s;
 }
 
@@ -86,15 +87,15 @@
 
 .form-input input:focus,
 .form-input input:valid {
-    border: 2px solid #C7BEA1;
+    border: 2px solid #646FD4;
 }
 
 .form-input input:focus::placeholder {
-    color: #C7BEA1;
+    color: #646FD4;
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #C7BEA1 !important;
+    background-color: #646FD4 !important;
     border: 0px;
 }
 
@@ -103,7 +104,7 @@
     border: none;
     cursor: pointer;
     border-radius: 50px;
-    background: #C7BEA1;
+    background: #646FD4;
     color: #fff;
     font-size: 90%;
     font-weight: bold;
@@ -113,19 +114,19 @@
 }
 
 .form-box button[type="submit"]:hover {
-    background: #9A9582;
+    background: #8CC0DE;
 }
 
 .forget-link,
 .register-link {
-    color: #9A9582;
+    color: #8CC0DE;
     font-weight: bold;
     transition: 0.2s;
 }
 
 .forget-link:hover,
 .register-link:hover {
-    color: #C7BEA1;
+    color: #646FD4;
     text-decoration: none;
 }
 
@@ -140,7 +141,7 @@
     border: none;
     cursor: pointer;
     border-radius: 50px;
-    background: #C7BEA1;
+    background: #646FD4;
     color: #fff;
     font-size: 90%;
     font-weight: bold;
