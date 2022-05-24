@@ -4,12 +4,10 @@ $(document).ready(function() {
 
         e.preventDefault()
 
-        // Alterar as informações do modal para apresentação dos dados
-
         $('.modal-title').empty()
         $('.modal-body').empty()
 
-        $('.modal-title').append('Visualização de registro')
+        $('.modal-title').append('Edição de registro')
 
         let ID = `ID=${$(this).attr('id')}`
 
@@ -29,10 +27,10 @@ $(document).ready(function() {
                     $('.btn-save').show()
                     $('#modal-tipo').modal('show')
                 } else {
-                    Swal.fire({ // Inicialização do SweetAlert
-                        title: 'Sistema de Rifas', // Título da janela SweetAler
-                        text: dado.mensagem, // Mensagem retornada do microserviço
-                        type: dado.tipo, // Tipo de retorno [success, info ou error]
+                    Swal.fire({
+                        title: 'Rifas',
+                        text: dado.mensagem,
+                        type: dado.tipo,
                         confirmButtonText: 'OK'
                     })
                 }

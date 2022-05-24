@@ -9,13 +9,16 @@ $(document).ready(function() {
         "language": {
             "url": "libs/dataTables/pt_br.json"
         },
+        "order": [
+            [0, "desc"]
+        ],
         "columns": [{
                 "data": 'ID',
-                "className": 'text-center'
+                "className": 'text-start'
             },
             {
                 "data": 'NOME',
-                "className": 'text-center'
+                "className": 'text-start'
             },
             {
                 "data": 'ID',
@@ -24,12 +27,13 @@ $(document).ready(function() {
                 "className": 'text-center',
                 "render": function(data, type, row, meta) {
                     return `
-                    <button id="${data}" class="btn btn-info btn-sm btn-view"><i class="fa-solid fa-eye"></i></button>
-                    <button id="${data}" class="btn btn-primary btn-sm btn-edit"><i class="fa-solid fa-marker"></i></button>
-                    <button id="${data}" class="btn btn-danger btn-sm btn-delete"><i class="fa-solid fa-trash"></i></button>
+                    <button id="${data}" class="btn btn-info btn-sm btn-view"><i class="mdi mdi-eye"></i></button>
+                    <button id="${data}" class="btn btn-primary btn-sm btn-edit"><i class="mdi mdi-pencil"></i></button>
+                    <button id="${data}" class="btn btn-danger btn-sm btn-delete"><i class="mdi mdi-delete"></i></button>
                     `
                 }
             }
         ]
     })
+
 })
