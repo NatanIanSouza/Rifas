@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    $('#table-tipo').on('click', 'button.btn-edit', function(e) {
+    $('#table-comprador').on('click', 'button.btn-view', function(e) {
 
         e.preventDefault()
 
@@ -16,15 +16,17 @@ $(document).ready(function() {
             dataType: 'json',
             assync: true,
             data: ID,
-            url: 'src/tipo/model/view-tipo.php',
+            url: 'src/comprador/model/view-comprador.php',
             success: function(dado) {
                 if (dado.tipo == "success") {
-                    $('.modal-body').load('src/tipo/view/form-tipo.html', function() {
+                    $('.modal-body').load('src/comprador/view/form-comprador.html', function() {
                         $('#NOME').val(dado.dados.NOME)
-                        $('#ID').val(dado.dados.ID)
+                        $('#NOME').attr('readonly', 'true')
+                        $('#CELULAR').val(dado.dados.CELULAR)
+                        $('#CELULAR').attr('readonly', 'true')
                     })
-                    $('.btn-save').show()
-                    $('#modal-tipo').modal('show')
+                    $('.btn-save').hide()
+                    $('#modal-comprador').modal('show')
                 } else {
                     Swal.fire({
                         title: 'e-Rifa',

@@ -1,9 +1,9 @@
 $(document).ready(function() {
-    $('#table-tipo').DataTable({
+    $('#table-comprador').DataTable({
         "processing": true,
         "serverSide": true,
         "ajax": {
-            "url": "src/tipo/model/list-tipo.php",
+            "url": "src/comprador/model/list-comprador.php",
             "type": "POST"
         },
         "language": {
@@ -15,6 +15,10 @@ $(document).ready(function() {
             },
             {
                 "data": 'NOME',
+                "className": 'text-center'
+            },
+            {
+                "data": 'CELULAR',
                 "className": 'text-center'
             },
             {
