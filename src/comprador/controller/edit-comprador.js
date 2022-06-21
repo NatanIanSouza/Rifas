@@ -25,6 +25,7 @@ $(document).ready(function() {
                         $('#ID').val(dado.dados.ID)
                     })
                     $('.btn-save').show()
+                    $('.btn-save').removeAttr('data-operation', 'insert')
                     $('#modal-comprador').modal('show')
                 } else {
                     Swal.fire({
