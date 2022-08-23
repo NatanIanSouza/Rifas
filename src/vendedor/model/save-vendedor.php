@@ -20,7 +20,7 @@ if(empty($requestData['NOME'])){
                 ':a' => $requestData['NOME'],
                 ':b' => $requestData['CELULAR'],
                 ':c' => $requestData['LOGIN'],
-                ':d' => md5($requestData['SENHA']),
+                ':d' => $requestData['SENHA'],
                 ':e' => $requestData['TIPO_ID']
             ));
             $dados = array(
@@ -41,7 +41,7 @@ if(empty($requestData['NOME'])){
                 ':a' => $requestData['NOME'],
                 ':b' => $requestData['CELULAR'],
                 ':c' => $requestData['LOGIN'],
-                ':d' => md5($requestData['SENHA']),
+                ':d' => $requestData['SENHA'],
                 ':e' => $requestData['TIPO_ID']
             ));
             $dados = array(

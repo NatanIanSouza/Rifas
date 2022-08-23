@@ -4,7 +4,7 @@
     session_destroy();
     //consulta ao banco 
     include('../../conexao/conn.php');
-    $SENHA = md5($_REQUEST['SENHA']);
+    $SENHA = $_REQUEST['SENHA'];
     $LOGIN = $_REQUEST['LOGIN'];
 
     //SQL de consulta dos dados digitados
